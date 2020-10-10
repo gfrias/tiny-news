@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		999F63622531D78C00E9053F /* TinyNews WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 999F63612531D78C00E9053F /* TinyNews WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		999F63672531D78E00E9053F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999F63662531D78E00E9053F /* Assets.xcassets */; };
+		999F636E2531D78F00E9053F /* TinyNews WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 999F636D2531D78F00E9053F /* TinyNews WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		999F63732531D78F00E9053F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F63722531D78F00E9053F /* ContentView.swift */; };
+		999F63752531D78F00E9053F /* TinyNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F63742531D78F00E9053F /* TinyNewsApp.swift */; };
+		999F63772531D78F00E9053F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F63762531D78F00E9053F /* ComplicationController.swift */; };
+		999F63792531D78F00E9053F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999F63782531D78F00E9053F /* Assets.xcassets */; };
+		999F637C2531D78F00E9053F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999F637B2531D78F00E9053F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		999F63632531D78C00E9053F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 999F63572531D78C00E9053F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 999F63602531D78C00E9053F;
+			remoteInfo = "TinyNews WatchKit App";
+		};
+		999F636F2531D78F00E9053F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 999F63572531D78C00E9053F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 999F636C2531D78F00E9053F;
+			remoteInfo = "TinyNews WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		999F63832531D78F00E9053F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				999F636E2531D78F00E9053F /* TinyNews WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999F63872531D78F00E9053F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				999F63622531D78C00E9053F /* TinyNews WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		999F635D2531D78C00E9053F /* TinyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		999F63612531D78C00E9053F /* TinyNews WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinyNews WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		999F63662531D78E00E9053F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		999F63682531D78E00E9053F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999F636D2531D78F00E9053F /* TinyNews WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TinyNews WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		999F63722531D78F00E9053F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		999F63742531D78F00E9053F /* TinyNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyNewsApp.swift; sourceTree = "<group>"; };
+		999F63762531D78F00E9053F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		999F63782531D78F00E9053F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		999F637B2531D78F00E9053F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		999F637D2531D78F00E9053F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		999F636A2531D78F00E9053F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		999F63562531D78C00E9053F = {
+			isa = PBXGroup;
+			children = (
+				999F63652531D78C00E9053F /* TinyNews WatchKit App */,
+				999F63712531D78F00E9053F /* TinyNews WatchKit Extension */,
+				999F635E2531D78C00E9053F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		999F635E2531D78C00E9053F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				999F635D2531D78C00E9053F /* TinyNews.app */,
+				999F63612531D78C00E9053F /* TinyNews WatchKit App.app */,
+				999F636D2531D78F00E9053F /* TinyNews WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		999F63652531D78C00E9053F /* TinyNews WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				999F63662531D78E00E9053F /* Assets.xcassets */,
+				999F63682531D78E00E9053F /* Info.plist */,
+			);
+			path = "TinyNews WatchKit App";
+			sourceTree = "<group>";
+		};
+		999F63712531D78F00E9053F /* TinyNews WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				999F63722531D78F00E9053F /* ContentView.swift */,
+				999F63742531D78F00E9053F /* TinyNewsApp.swift */,
+				999F63762531D78F00E9053F /* ComplicationController.swift */,
+				999F63782531D78F00E9053F /* Assets.xcassets */,
+				999F637D2531D78F00E9053F /* Info.plist */,
+				999F637A2531D78F00E9053F /* Preview Content */,
+			);
+			path = "TinyNews WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		999F637A2531D78F00E9053F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				999F637B2531D78F00E9053F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		999F635C2531D78C00E9053F /* TinyNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 999F63882531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews" */;
+			buildPhases = (
+				999F635B2531D78C00E9053F /* Resources */,
+				999F63872531D78F00E9053F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				999F63642531D78C00E9053F /* PBXTargetDependency */,
+			);
+			name = TinyNews;
+			productName = TinyNews;
+			productReference = 999F635D2531D78C00E9053F /* TinyNews.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		999F63602531D78C00E9053F /* TinyNews WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 999F63842531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews WatchKit App" */;
+			buildPhases = (
+				999F635F2531D78C00E9053F /* Resources */,
+				999F63832531D78F00E9053F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				999F63702531D78F00E9053F /* PBXTargetDependency */,
+			);
+			name = "TinyNews WatchKit App";
+			productName = "TinyNews WatchKit App";
+			productReference = 999F63612531D78C00E9053F /* TinyNews WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		999F636C2531D78F00E9053F /* TinyNews WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 999F63802531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews WatchKit Extension" */;
+			buildPhases = (
+				999F63692531D78F00E9053F /* Sources */,
+				999F636A2531D78F00E9053F /* Frameworks */,
+				999F636B2531D78F00E9053F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TinyNews WatchKit Extension";
+			productName = "TinyNews WatchKit Extension";
+			productReference = 999F636D2531D78F00E9053F /* TinyNews WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		999F63572531D78C00E9053F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					999F635C2531D78C00E9053F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					999F63602531D78C00E9053F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					999F636C2531D78F00E9053F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 999F635A2531D78C00E9053F /* Build configuration list for PBXProject "TinyNews" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 999F63562531D78C00E9053F;
+			productRefGroup = 999F635E2531D78C00E9053F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				999F635C2531D78C00E9053F /* TinyNews */,
+				999F63602531D78C00E9053F /* TinyNews WatchKit App */,
+				999F636C2531D78F00E9053F /* TinyNews WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		999F635B2531D78C00E9053F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999F635F2531D78C00E9053F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F63672531D78E00E9053F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999F636B2531D78F00E9053F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F637C2531D78F00E9053F /* Preview Assets.xcassets in Resources */,
+				999F63792531D78F00E9053F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		999F63692531D78F00E9053F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F63752531D78F00E9053F /* TinyNewsApp.swift in Sources */,
+				999F63732531D78F00E9053F /* ContentView.swift in Sources */,
+				999F63772531D78F00E9053F /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		999F63642531D78C00E9053F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 999F63602531D78C00E9053F /* TinyNews WatchKit App */;
+			targetProxy = 999F63632531D78C00E9053F /* PBXContainerItemProxy */;
+		};
+		999F63702531D78F00E9053F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 999F636C2531D78F00E9053F /* TinyNews WatchKit Extension */;
+			targetProxy = 999F636F2531D78F00E9053F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		999F637E2531D78F00E9053F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		999F637F2531D78F00E9053F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		999F63812531D78F00E9053F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TinyNews WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TinyNews WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.TinyNews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		999F63822531D78F00E9053F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TinyNews WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TinyNews WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.TinyNews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		999F63852531D78F00E9053F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				IBSC_MODULE = TinyNews_WatchKit_Extension;
+				INFOPLIST_FILE = "TinyNews WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.TinyNews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		999F63862531D78F00E9053F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				IBSC_MODULE = TinyNews_WatchKit_Extension;
+				INFOPLIST_FILE = "TinyNews WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.TinyNews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		999F63892531D78F00E9053F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.TinyNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		999F638A2531D78F00E9053F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.TinyNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		999F635A2531D78C00E9053F /* Build configuration list for PBXProject "TinyNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999F637E2531D78F00E9053F /* Debug */,
+				999F637F2531D78F00E9053F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		999F63802531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999F63812531D78F00E9053F /* Debug */,
+				999F63822531D78F00E9053F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		999F63842531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999F63852531D78F00E9053F /* Debug */,
+				999F63862531D78F00E9053F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		999F63882531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999F63892531D78F00E9053F /* Debug */,
+				999F638A2531D78F00E9053F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 999F63572531D78C00E9053F /* Project object */;
+}
