@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct TinyNewsApp: App {
+    let store = Store()
+    
+    init() {
+        self.store.loadTopStories()
+    }
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView(store: store)
             }
         }
     }
