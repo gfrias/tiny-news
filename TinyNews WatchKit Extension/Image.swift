@@ -92,3 +92,12 @@ struct ImageView: View {
     
     
 }
+
+struct WebView: View {
+    let url: String
+
+    var body: some View {
+        ImageView(withURL: url)
+    }
+
+}

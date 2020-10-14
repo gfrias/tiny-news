@@ -20,6 +20,7 @@
 		999F638F2531D8FA00E9053F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F638E2531D8FA00E9053F /* Item.swift */; };
 		99DC012625320C7600ABE1DD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC012525320C7600ABE1DD /* Image.swift */; };
 		99DC013B25322CC200ABE1DD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC013A25322CC200ABE1DD /* Store.swift */; };
+		99E084872536053100ED8883 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E084862536053100ED8883 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		999F638E2531D8FA00E9053F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		99DC012525320C7600ABE1DD /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		99DC013A25322CC200ABE1DD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		99E084862536053100ED8883 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,16 +135,17 @@
 		999F63712531D78F00E9053F /* TinyNews WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				999F63722531D78F00E9053F /* ContentView.swift */,
-				999F63742531D78F00E9053F /* TinyNewsApp.swift */,
-				999F63762531D78F00E9053F /* ComplicationController.swift */,
 				999F63782531D78F00E9053F /* Assets.xcassets */,
-				999F637D2531D78F00E9053F /* Info.plist */,
-				999F637A2531D78F00E9053F /* Preview Content */,
-				999F638E2531D8FA00E9053F /* Item.swift */,
-				99DC012525320C7600ABE1DD /* Image.swift */,
-				99DC013A25322CC200ABE1DD /* Store.swift */,
 				995DFE9B2533346200D87374 /* Comment.swift */,
+				999F63762531D78F00E9053F /* ComplicationController.swift */,
+				999F63722531D78F00E9053F /* ContentView.swift */,
+				99DC012525320C7600ABE1DD /* Image.swift */,
+				999F637D2531D78F00E9053F /* Info.plist */,
+				999F638E2531D8FA00E9053F /* Item.swift */,
+				999F637A2531D78F00E9053F /* Preview Content */,
+				99DC013A25322CC200ABE1DD /* Store.swift */,
+				99E084862536053100ED8883 /* Story.swift */,
+				999F63742531D78F00E9053F /* TinyNewsApp.swift */,
 				995DFEA02533550900D87374 /* Utils.swift */,
 			);
 			path = "TinyNews WatchKit Extension";
@@ -296,6 +299,7 @@
 				99DC013B25322CC200ABE1DD /* Store.swift in Sources */,
 				999F63772531D78F00E9053F /* ComplicationController.swift in Sources */,
 				99DC012625320C7600ABE1DD /* Image.swift in Sources */,
+				99E084872536053100ED8883 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
