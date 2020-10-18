@@ -56,8 +56,7 @@ struct CommentDetails: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Text("\(comment.by ?? "someone") (\(comment.elapsedTime())) wrote:").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                Spacer()
-                Text(comment.text ?? "")
+                Text(comment.text ?? "").padding(.top)
                 if let item = store.items[comment.id], item.count > 0 {
                     NavigationLink(destination: buildDestination(comment: comment)){
                         Text("Replies (\(item.count))")

@@ -41,6 +41,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "tnlogo.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",

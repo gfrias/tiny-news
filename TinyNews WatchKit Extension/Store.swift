@@ -14,9 +14,15 @@ class Store: ObservableObject {
     
     @Published var items: [Int: [Item]] = [Int:[Item]]()
     
+    init(mock:Bool = false) {
+        if mock {
+            self.items = getSampleData()
+        }
+    }
+    
     func loadTopStories() {
         let url = URL(string: "https://hacker-news.firebaseio.com/v0/topstories.json")!
-        print(">>> loading top stories: \(url)")
+//        print(">>> loading top stories: \(url)")
 
         self.items = [Int:[Item]]()
         
@@ -27,7 +33,7 @@ class Store: ObservableObject {
             .replaceError(with: [])
             .receive(on: RunLoop.main)
             .sink(receiveValue: { (ids) in
-                print("<<< top stories loaded: \(ids)")
+//                print("<<< top stories loaded: \(ids)")
                 self.loadItems(parent: 0, ids: ids)
             })
     }
@@ -36,8 +42,7 @@ class Store: ObservableObject {
         if self.items[parent] != nil {
             return
         }
-        
-        print(">>> loading items: \(ids) for parent \(parent)")
+//        print(">>> loading items: \(ids) for parent \(parent)")
         
         let publisherOfPublishers = Publishers.MergeMany(ids.map { buildItemPublisher(id: $0 )})
         
@@ -45,7 +50,7 @@ class Store: ObservableObject {
                             .compactMap{ $0 }
                             .filter { !($0.deleted ?? false) }
                             .reduce([Int:Item](), { (dict, item) -> [Int:Item] in
-                                print("reducing items for parent \(parent) item \(item.id)")
+//                                print("reducing items for parent \(parent) item \(item.id)")
                                 var dict = dict, item = item
                                 item.text = item.text?.htmlToPlainStr()
                                 dict[item.id] = item
@@ -53,7 +58,7 @@ class Store: ObservableObject {
                             })
                             .receive(on: RunLoop.main)
                             .sink(receiveValue: { items in
-                                print("mapping items for parent \(parent)")
+//                                print("mapping items for parent \(parent)")
                                 self.items[parent] = ids.compactMap { items[$0] }
                                 self.objectWillChange.send()
                             })
@@ -70,6 +75,14 @@ class Store: ObservableObject {
             .eraseToAnyPublisher()
     }
     
+    func getSampleData() -> [Int: [Item]] {
+        return [0:
+                [Item(id: 1, deleted: false, type: "Story", by: "gfrias", time: 0, text: "Apple releases iPhone 12", dead: false, parent: 0, kids: [], url: "www.apple.com", score: 12, title: "Apple releases iPhone 12", descendants: 0),
+                 Item(id: 2, deleted: false, type: "Story", by: "jdoe", time: 0, text: "Apple releases iPhone 12", dead: false, parent: 0, kids: [], url: "www.apple.com", score: 12, title: "Apple releases iPhone 12", descendants: 0)
+                
+                ]
+        ]
+    }
 }
 
 
