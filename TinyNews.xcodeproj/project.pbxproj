@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		995DFE9C2533346200D87374 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995DFE9B2533346200D87374 /* Comment.swift */; };
 		995DFEA12533550900D87374 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995DFEA02533550900D87374 /* Utils.swift */; };
+		9962BA6F253C6DAD008C851A /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA6E253C6DAD008C851A /* img.png */; };
+		9962BA70253C6DAD008C851A /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA6E253C6DAD008C851A /* img.png */; };
+		9962BA71253C6DAD008C851A /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA6E253C6DAD008C851A /* img.png */; };
+		9962BA72253C6DAD008C851A /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA6E253C6DAD008C851A /* img.png */; };
+		9962BA7D253C6DFA008C851A /* Pictures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA64253C6D75008C851A /* Pictures.bundle */; };
+		9962BA82253C6E71008C851A /* Pictures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA64253C6D75008C851A /* Pictures.bundle */; };
+		9962BA83253C6E77008C851A /* Pictures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9962BA64253C6D75008C851A /* Pictures.bundle */; };
 		999F63622531D78C00E9053F /* TinyNews WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 999F63612531D78C00E9053F /* TinyNews WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		999F63672531D78E00E9053F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999F63662531D78E00E9053F /* Assets.xcassets */; };
 		999F636E2531D78F00E9053F /* TinyNews WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 999F636D2531D78F00E9053F /* TinyNews WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -24,6 +31,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9962BA77253C6DD5008C851A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 999F63572531D78C00E9053F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9962BA63253C6D75008C851A;
+			remoteInfo = Pictures;
+		};
+		9962BA79253C6DD9008C851A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 999F63572531D78C00E9053F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9962BA63253C6D75008C851A;
+			remoteInfo = Pictures;
+		};
+		9962BA7B253C6DE0008C851A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 999F63572531D78C00E9053F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9962BA63253C6D75008C851A;
+			remoteInfo = Pictures;
+		};
 		999F63632531D78C00E9053F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 999F63572531D78C00E9053F /* Project object */;
@@ -68,6 +96,9 @@
 /* Begin PBXFileReference section */
 		995DFE9B2533346200D87374 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		995DFEA02533550900D87374 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9962BA64253C6D75008C851A /* Pictures.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pictures.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9962BA66253C6D75008C851A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9962BA6E253C6DAD008C851A /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img.png; path = ../../../../Downloads/img.png; sourceTree = "<group>"; };
 		999F635D2531D78C00E9053F /* TinyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999F63612531D78C00E9053F /* TinyNews WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinyNews WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		999F63662531D78E00E9053F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9962BA65253C6D75008C851A /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				9962BA6E253C6DAD008C851A /* img.png */,
+				9962BA66253C6D75008C851A /* Info.plist */,
+			);
+			path = Pictures;
+			sourceTree = "<group>";
+		};
 		9997BAEC25337FC900ED5A0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +148,7 @@
 			children = (
 				999F63652531D78C00E9053F /* TinyNews WatchKit App */,
 				999F63712531D78F00E9053F /* TinyNews WatchKit Extension */,
+				9962BA65253C6D75008C851A /* Pictures */,
 				999F635E2531D78C00E9053F /* Products */,
 				9997BAEC25337FC900ED5A0C /* Frameworks */,
 			);
@@ -119,6 +160,7 @@
 				999F635D2531D78C00E9053F /* TinyNews.app */,
 				999F63612531D78C00E9053F /* TinyNews WatchKit App.app */,
 				999F636D2531D78F00E9053F /* TinyNews WatchKit Extension.appex */,
+				9962BA64253C6D75008C851A /* Pictures.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +204,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9962BA63253C6D75008C851A /* Pictures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9962BA69253C6D75008C851A /* Build configuration list for PBXNativeTarget "Pictures" */;
+			buildPhases = (
+				9962BA62253C6D75008C851A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pictures;
+			productName = Pictures;
+			productReference = 9962BA64253C6D75008C851A /* Pictures.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		999F635C2531D78C00E9053F /* TinyNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 999F63882531D78F00E9053F /* Build configuration list for PBXNativeTarget "TinyNews" */;
@@ -172,6 +229,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9962BA7C253C6DE0008C851A /* PBXTargetDependency */,
 				999F63642531D78C00E9053F /* PBXTargetDependency */,
 			);
 			name = TinyNews;
@@ -191,6 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9962BA7A253C6DD9008C851A /* PBXTargetDependency */,
 				999F63702531D78F00E9053F /* PBXTargetDependency */,
 			);
 			name = "TinyNews WatchKit App";
@@ -209,6 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9962BA78253C6DD5008C851A /* PBXTargetDependency */,
 			);
 			name = "TinyNews WatchKit Extension";
 			packageProductDependencies = (
@@ -226,6 +286,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					9962BA63253C6D75008C851A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					999F635C2531D78C00E9053F = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -255,15 +318,26 @@
 				999F635C2531D78C00E9053F /* TinyNews */,
 				999F63602531D78C00E9053F /* TinyNews WatchKit App */,
 				999F636C2531D78F00E9053F /* TinyNews WatchKit Extension */,
+				9962BA63253C6D75008C851A /* Pictures */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9962BA62253C6D75008C851A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9962BA72253C6DAD008C851A /* img.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999F635B2531D78C00E9053F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9962BA83253C6E77008C851A /* Pictures.bundle in Resources */,
+				9962BA6F253C6DAD008C851A /* img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +345,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9962BA7D253C6DFA008C851A /* Pictures.bundle in Resources */,
 				999F63672531D78E00E9053F /* Assets.xcassets in Resources */,
+				9962BA70253C6DAD008C851A /* img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9962BA82253C6E71008C851A /* Pictures.bundle in Resources */,
+				9962BA71253C6DAD008C851A /* img.png in Resources */,
 				999F637C2531D78F00E9053F /* Preview Assets.xcassets in Resources */,
 				999F63792531D78F00E9053F /* Assets.xcassets in Resources */,
 			);
@@ -306,6 +384,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9962BA78253C6DD5008C851A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9962BA63253C6D75008C851A /* Pictures */;
+			targetProxy = 9962BA77253C6DD5008C851A /* PBXContainerItemProxy */;
+		};
+		9962BA7A253C6DD9008C851A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9962BA63253C6D75008C851A /* Pictures */;
+			targetProxy = 9962BA79253C6DD9008C851A /* PBXContainerItemProxy */;
+		};
+		9962BA7C253C6DE0008C851A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9962BA63253C6D75008C851A /* Pictures */;
+			targetProxy = 9962BA7B253C6DE0008C851A /* PBXContainerItemProxy */;
+		};
 		999F63642531D78C00E9053F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 999F63602531D78C00E9053F /* TinyNews WatchKit App */;
@@ -319,6 +412,40 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9962BA67253C6D75008C851A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				INFOPLIST_FILE = Pictures/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.Pictures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9962BA68253C6D75008C851A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 958TZ6NLCD;
+				INFOPLIST_FILE = Pictures/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frias.Pictures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		999F637E2531D78F00E9053F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +677,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9962BA69253C6D75008C851A /* Build configuration list for PBXNativeTarget "Pictures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9962BA67253C6D75008C851A /* Debug */,
+				9962BA68253C6D75008C851A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		999F635A2531D78C00E9053F /* Build configuration list for PBXProject "TinyNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

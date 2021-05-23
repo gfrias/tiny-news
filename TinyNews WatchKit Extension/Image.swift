@@ -17,7 +17,20 @@ class ImageLoader: ObservableObject {
         }
     }
 
-    init(urlString:String) {
+    init(urlString:String, mock:Bool) {
+        if mock {
+            guard let bundleURL = Bundle.main.url(forResource: "Pictures", withExtension: "bundle") else { return }
+            guard let bundle = Bundle(url: bundleURL) else { return }
+            guard let imageURL = bundle.url(forResource: "img", withExtension: "png") else { return }
+
+            let image = UIImage(contentsOfFile: imageURL.path)
+            
+            DispatchQueue.main.async {
+                self.data = image?.pngData() ?? Data()
+            }
+            return
+        }
+        
         guard let url = URL(string: urlString) else { return }
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
@@ -65,18 +78,21 @@ class ImageViewModel: ObservableObject {
 
 struct ImageView: View {
     @ObservedObject var imageLoader:ImageLoader
+
     @ObservedObject var model: ImageViewModel
     
     @State var image:UIImage?
     
     private let url: String
     
-    init(withURL url:String, size: CGSize) {
+    init(withURL url:String, size: CGSize, mock:Bool = false) {
         self.url = url
         self.model = ImageViewModel(width: size.width, height: size.height)
-        self.imageLoader = ImageLoader(urlString:"http://192.168.178.199:8000/img.png")
-//        let urlEncoded = url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
-//        self.imageLoader = ImageLoader(urlString:"http://192.168.178.199:3000?url=" + urlEncoded)
+        
+        let urlEncoded = url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+        self.imageLoader = ImageLoader(urlString:"http://192.168.178.199:3000?url=" + urlEncoded, mock: mock)
+        
+        self.image = UIImage(named: "Mock")
     }
 
     var body: some View {
@@ -110,8 +126,6 @@ struct ImageView: View {
             )
         }
     }
-    
-    
 }
 
 struct WebView: View {
@@ -119,7 +133,7 @@ struct WebView: View {
 
     var body: some View {
         GeometryReader() { geo in
-            ImageView(withURL: url, size: geo.size)
+            ImageView(withURL: url, size: geo.size, mock: true)
         }
     }
 

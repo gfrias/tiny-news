@@ -19,11 +19,10 @@ struct ContentView: View {
                     NavigationLink(destination: StoryDetail(store: store, item: item)){
                         StoryRow(item: item)
                     }
-            }.navigationTitle(Text("TinyNews")))
+                }.navigationTitle(Text("TinyNews")))
         } else {
             return AnyView(ProgressView())
         }
-        
     }
 }
 
